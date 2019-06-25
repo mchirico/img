@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 
 	"github.com/containerd/containerd/namespaces"
-	"github.com/genuinetools/img/client"
+	"github.com/mchirico/img/client"
 	"github.com/moby/buildkit/identity"
 	"github.com/moby/buildkit/session"
 )

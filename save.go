@@ -9,7 +9,7 @@ import (
 
 	"github.com/containerd/containerd/namespaces"
 	"github.com/docker/docker/pkg/term"
-	"github.com/genuinetools/img/client"
+	"github.com/mchirico/img/client"
 	"github.com/moby/buildkit/identity"
 	"github.com/moby/buildkit/session"
 )

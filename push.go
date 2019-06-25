@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/containerd/containerd/namespaces"
-	"github.com/genuinetools/img/client"
+	"github.com/mchirico/img/client"
 	"github.com/moby/buildkit/session"
 	"github.com/moby/buildkit/util/appcontext"
 	"golang.org/x/sync/errgroup"

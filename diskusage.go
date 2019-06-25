@@ -9,7 +9,7 @@ import (
 
 	"github.com/containerd/containerd/namespaces"
 	units "github.com/docker/go-units"
-	"github.com/genuinetools/img/client"
+	"github.com/mchirico/img/client"
 	controlapi "github.com/moby/buildkit/api/services/control"
 	"github.com/moby/buildkit/identity"
 	"github.com/moby/buildkit/session"
