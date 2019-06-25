@@ -11,6 +11,7 @@ addons:
       - parallel
       - uidmap
 before_install:
+  - go get -v -t ./...
   - go get golang.org/x/lint/golint
   - go get honnef.co/go/tools/cmd/staticcheck
   - go get -u github.com/jteeuwen/go-bindata/...

@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 
 	"github.com/containerd/containerd/snapshots/overlay"
-	"github.com/genuinetools/img/types"
+	"github.com/mchirico/img/types"
 	"github.com/moby/buildkit/control"
 	"github.com/moby/buildkit/session"
 	"github.com/sirupsen/logrus"
