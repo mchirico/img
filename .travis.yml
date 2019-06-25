@@ -35,7 +35,9 @@ jobs:
       before_deploy:
         - echo "Deploying to GitHub releases ..."
       after_success:
-        - docker build --no-cache -t mchirico/img .
+        - docker build --no-cache -t aipiggybot/img .
+        - docker login -u=aipiggybot -p=${docker_password}
+        - docker push aipiggybot/img
       deploy:
         provider: releases
         file:
