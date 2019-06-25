@@ -321,7 +321,7 @@ func (s *forwardIO) Stderr() io.ReadCloser {
 	return nil
 }
 
-// setOOMScoreAdj comes from https://github.com/genuinetools/img/blob/2fabe60b7dc4623aa392b515e013bbc69ad510ab/executor/runc/executor.go#L182-L192
+// setOOMScoreAdj comes from https://github.com/mchirico/img/blob/2fabe60b7dc4623aa392b515e013bbc69ad510ab/executor/runc/executor.go#L182-L192
 func setOOMScoreAdj(spec *specs.Spec) error {
 	// Set the oom_score_adj of our children containers to that of the current process.
 	b, err := ioutil.ReadFile("/proc/self/oom_score_adj")

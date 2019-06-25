@@ -16,7 +16,7 @@ import (
 	ctdsnapshot "github.com/containerd/containerd/snapshots"
 	"github.com/containerd/containerd/snapshots/native"
 	"github.com/containerd/containerd/snapshots/overlay"
-	"github.com/genuinetools/img/types"
+	"github.com/mchirico/img/types"
 	"github.com/moby/buildkit/cache/metadata"
 	"github.com/moby/buildkit/executor"
 	executoroci "github.com/moby/buildkit/executor/oci"

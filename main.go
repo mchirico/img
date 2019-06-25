@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/genuinetools/img/internal/binutils"
-	_ "github.com/genuinetools/img/internal/unshare"
-	"github.com/genuinetools/img/types"
-	"github.com/genuinetools/img/version"
+	"github.com/mchirico/img/internal/binutils"
+	_ "github.com/mchirico/img/internal/unshare"
+	"github.com/mchirico/img/types"
+	"github.com/mchirico/img/version"
 	"github.com/genuinetools/pkg/cli"
 	"github.com/sirupsen/logrus"
 )

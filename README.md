@@ -2,7 +2,7 @@
 
 [![Travis CI](https://img.shields.io/travis/genuinetools/img.svg?style=for-the-badge)](https://travis-ci.org/genuinetools/img)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=for-the-badge)](https://godoc.org/github.com/genuinetools/img)
-[![Github All Releases](https://img.shields.io/github/downloads/genuinetools/img/total.svg?style=for-the-badge)](https://github.com/genuinetools/img/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/genuinetools/img/total.svg?style=for-the-badge)](https://github.com/mchirico/img/releases)
 
 Standalone, daemon-less, unprivileged Dockerfile and OCI compatible
 container image builder.
@@ -112,7 +112,7 @@ NOTE: These steps work only for Linux. Compile and run in a container
 
 #### Binaries
 
-For installation instructions from binaries please visit the [Releases Page](https://github.com/genuinetools/img/releases).
+For installation instructions from binaries please visit the [Releases Page](https://github.com/mchirico/img/releases).
 
 #### From Source
 
@@ -272,7 +272,7 @@ Setting up the rootfs... this may take a bit.
  => local://context                                                                   0.8s
  => => transferring context: 116.83MB                                                 0.8s
  => /bin/sh -c apk add --no-cache  bash  build-base  gcc  git  libseccomp-dev  linux  3.8s
- => copy /src-0 go/src/github.com/genuinetools/img/                                   1.5s
+ => copy /src-0 go/src/github.com/mchirico/img/                                   1.5s
  => /bin/sh -c go get -u github.com/jteeuwen/go-bindata/...                           7.3s
  => /bin/sh -c make static && mv img /usr/bin/img                                    15.2s
  => /bin/sh -c git clone https://github.com/opencontainers/runc.git "$GOPATH/src/git  7.6s
@@ -648,12 +648,12 @@ The `native` backends creates image layers by simply copying files.
 
 You can also use `overlayfs` 
 backend, but that requires a kernel patch from Ubuntu to be unprivileged, 
-see [#22](https://github.com/genuinetools/img/issues/22).
+see [#22](https://github.com/mchirico/img/issues/22).
 
 
 ## Contributing
 
-Please do! This is a new project and can use some love <3. Check out the [issues](https://github.com/genuinetools/img/issues).
+Please do! This is a new project and can use some love <3. Check out the [issues](https://github.com/mchirico/img/issues).
 
 The local directories are mostly re-implementations of `buildkit` interfaces to
 be unprivileged.

@@ -85,7 +85,7 @@ func TestBuildDockerfileNotInContextRoot(t *testing.T) {
 }
 
 // Make sure the client exits with the correct exit code.
-// https://github.com/genuinetools/img/issues/101
+// https://github.com/mchirico/img/issues/101
 func TestBuildDockerfileFailing(t *testing.T) {
 	name := "testbuilddockerfilefailing"
 
@@ -98,7 +98,7 @@ func TestBuildDockerfileFailing(t *testing.T) {
 }
 
 // Using apt requires subuid, subgid, setgroups, and networking to be enabled.
-// https://github.com/genuinetools/img/issues/96
+// https://github.com/mchirico/img/issues/96
 func TestBuildAPT(t *testing.T) {
 	name := "testbuildapt"
 
