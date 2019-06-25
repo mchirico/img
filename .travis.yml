@@ -9,7 +9,7 @@ addons:
     packages:
       - libseccomp-dev
       - parallel
-      - uidma
+      - uidmap
 services:
   - docker
 after_success:
