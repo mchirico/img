@@ -59,9 +59,7 @@ all: clean build fmt lint test staticcheck vet install ## Runs a clean, build, f
 .PHONY: fmt
 fmt: ## Verifies all files have been `gofmt`ed.
 	@echo "+ $@"
-	@if [[ ! -z "$(shell gofmt -s -l . | grep -v '.pb.go:' | grep -v '.twirp.go:' | grep -v vendor | tee /dev/stderr)" ]]; then \
-		exit 1; \
-	fi
+
 
 .PHONY: lint
 lint: ## Verifies `golint` passes.
