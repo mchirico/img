@@ -9,7 +9,11 @@ addons:
     packages:
       - libseccomp-dev
       - parallel
-      - uidmap
+      - uidma
+services:
+  - docker
+after_success:
+  - docker build --no-cache -t mchirico/img .
 before_install:
   - go get golang.org/x/lint/golint
   - go get honnef.co/go/tools/cmd/staticcheck
