@@ -1,8 +1,11 @@
 # img
 
-[![Travis CI](https://img.shields.io/travis/genuinetools/img.svg?style=for-the-badge)](https://travis-ci.org/genuinetools/img)
+
+[![Build Status](https://travis-ci.org/mchirico/img.svg?branch=master)](https://travis-ci.org/mchirico/img)
+
+
 [![GoDoc](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=for-the-badge)](https://godoc.org/github.com/genuinetools/img)
-[![Github All Releases](https://img.shields.io/github/downloads/genuinetools/img/total.svg?style=for-the-badge)](https://github.com/mchirico/img/releases)
+
 
 Standalone, daemon-less, unprivileged Dockerfile and OCI compatible
 container image builder.
