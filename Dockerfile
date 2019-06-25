@@ -9,7 +9,7 @@ RUN apk add --no-cache \
 	make
 
 FROM gobuild-base AS img
-WORKDIR /go/src/github.com/genuinetools/img
+WORKDIR /go/src/github.com/mchirico/img
 COPY . .
 RUN go get -u github.com/jteeuwen/go-bindata/go-bindata
 RUN make static && mv img /usr/bin/img
@@ -32,7 +32,7 @@ RUN ./autogen.sh --disable-nls --disable-man --without-audit --without-selinux -
   && cp src/newuidmap src/newgidmap /usr/bin
 
 FROM alpine:3.8 AS base
-MAINTAINER Jessica Frazelle <jess@linux.com>
+MAINTAINER Mike Chirico <mchirico@t.aipiggybot.io>>
 RUN apk add --no-cache git
 COPY --from=img /usr/bin/img /usr/bin/img
 COPY --from=idmap /usr/bin/newuidmap /usr/bin/newuidmap
